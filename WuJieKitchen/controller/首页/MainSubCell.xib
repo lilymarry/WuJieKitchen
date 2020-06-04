@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="MainSubCell">
+            <rect key="frame" x="0.0" y="0.0" width="518" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="518" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zlf-jr-gTN">
+                        <rect key="frame" x="0.0" y="102.5" width="518" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="367-Mg-mCP"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜品A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAg-iH-2Ik">
+                        <rect key="frame" x="8" y="43.5" width="111" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待备菜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjL-Yc-9BZ">
+                        <rect key="frame" x="229" y="43.5" width="60" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="K8i-82-9dP"/>
+                            <constraint firstAttribute="height" constant="17" id="rEk-YM-JpZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已超时：00:05:10" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mT-NC-mkC">
+                        <rect key="frame" x="294" y="43.5" width="177" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EO0-u2-fPA">
+                        <rect key="frame" x="476" y="33.5" width="37" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="Hb0-By-Uea"/>
+                            <constraint firstAttribute="height" constant="37" id="bFF-XZ-25G"/>
+                        </constraints>
+                        <state key="normal" image="警报"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKz-QU-hQu">
+                        <rect key="frame" x="124" y="42" width="100" height="20"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Fhu-x2-LVQ"/>
+                            <constraint firstAttribute="width" constant="100" id="ZaX-hL-Bnn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title=" 注意制作时间" image="闹钟">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds " value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.98431372549999996" green="0.8980392157" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="6mT-NC-mkC" firstAttribute="leading" secondItem="jjL-Yc-9BZ" secondAttribute="trailing" constant="5" id="2gZ-aG-Gxw"/>
+                    <constraint firstItem="EO0-u2-fPA" firstAttribute="leading" secondItem="6mT-NC-mkC" secondAttribute="trailing" constant="5" id="65b-em-CPA"/>
+                    <constraint firstAttribute="bottom" secondItem="Zlf-jr-gTN" secondAttribute="bottom" id="9pF-fQ-V7x"/>
+                    <constraint firstAttribute="trailing" secondItem="EO0-u2-fPA" secondAttribute="trailing" constant="5" id="Erl-Oc-cLg"/>
+                    <constraint firstItem="xAg-iH-2Ik" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KZv-0b-ZGc"/>
+                    <constraint firstItem="xAg-iH-2Ik" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="KjN-kM-JLQ"/>
+                    <constraint firstItem="Zlf-jr-gTN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LUh-uM-RMT"/>
+                    <constraint firstAttribute="trailing" secondItem="Zlf-jr-gTN" secondAttribute="trailing" id="MLu-tz-fqT"/>
+                    <constraint firstItem="6mT-NC-mkC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QBc-8Z-GcK"/>
+                    <constraint firstItem="jjL-Yc-9BZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="W0y-l9-io4"/>
+                    <constraint firstItem="EO0-u2-fPA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Xap-qk-vYq"/>
+                    <constraint firstItem="RKz-QU-hQu" firstAttribute="leading" secondItem="xAg-iH-2Ik" secondAttribute="trailing" constant="5" id="dsL-qT-xPg"/>
+                    <constraint firstItem="RKz-QU-hQu" firstAttribute="leading" secondItem="xAg-iH-2Ik" secondAttribute="trailing" constant="5" id="elk-AJ-oJ9"/>
+                    <constraint firstItem="jjL-Yc-9BZ" firstAttribute="leading" secondItem="RKz-QU-hQu" secondAttribute="trailing" constant="5" id="nBg-oY-zop"/>
+                    <constraint firstItem="RKz-QU-hQu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qij-lf-Umu"/>
+                    <constraint firstItem="jjL-Yc-9BZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="x2L-LN-cOY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="alertBtn" destination="EO0-u2-fPA" id="pNR-f6-LO9"/>
+                <outlet property="nameLab" destination="xAg-iH-2Ik" id="M4B-sG-oad"/>
+                <outlet property="newsBtn" destination="RKz-QU-hQu" id="RFK-bm-1YL"/>
+                <outlet property="newsBtnWW" destination="ZaX-hL-Bnn" id="qjb-e0-Xvi"/>
+                <outlet property="stateLab" destination="jjL-Yc-9BZ" id="F14-Ur-Yhx"/>
+                <outlet property="timeLab" destination="6mT-NC-mkC" id="DGi-B2-wCd"/>
+            </connections>
+            <point key="canvasLocation" x="124.21875" y="50.390625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="警报" width="37" height="37"/>
+        <image name="闹钟" width="16" height="16"/>
+    </resources>
+</document>
